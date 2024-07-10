@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @media (min-width: 1375px) and (max-width: 800px) {
+    .widthRespo{
+ 
+    }
+  }
+
+  @media (min-width: 1375px) and (max-width: 800px) {
+    .widthRespo{
+        width: 66.666667% !important;
+    }
+  }
+*/
+  /* @media (min-width: 200px) and (max-width: 800px) {
+    .hideForSm{
+     display: none;
+     text-align: center;
+    }
+  }   */
+
+body{
+    background: linear-gradient(90deg, #FFFBEC 0%, #D7F9EC 38.02%, #E4E5FF 100%);
+}
+hr{
+    border: none; /* Remove default border */
+    height: 3px; /* Set the desired thickness */
+    background-color: #FFB24A; 
+}
+.logo img{
+    height: 50px;
+    padding-bottom: 10%;
+}
+nav{
+    height: 70px;
+}
+nav ul li{
+    font-size: large;
+    font-weight: 600;
+    color: #EE2B53;
+}
+nav .buttonNav button{
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+    background: linear-gradient(66deg, #FFDE2E 7.36%, #FF965B 102.53%);
+}
+.header .text{
+    background: linear-gradient(66deg, #FFDE2E 7.36%, #FF965B 102.53%);
+}
+.main{
+    margin-top: 10%;
+}
+
+.image{
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.fistImg{
+    height: 370px;
+}
+.image img{
+    height: 350px;
+    }
+.main .womanImage{
+    height: 500px;
+}
+.woman{
+    z-index: 1;
+    text-align: center;
+}
+.Rewards a{
+    background-color: linear-gradient(60deg, #FFDE2E 9.28%, #FF965B 100%);
+    width: 150px;
+    height: 50px;
+}
+.coinsParent{
+    background: linear-gradient(60deg, #FFDE2E 9.28%, #FF965B 100%);
+}
+.cards{
+    width: 15rem;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-image video{
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 3px solid rgb(255, 170, 0);
+    transition-duration: 0.4s;
+    transition-property: transform;
+  }
+  
+  .profile-image video:hover{
+    transform: scale(1.1);
+  }
+  
+  .cards-content h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+  }
+
+
+  .btnSale button{
+    border-radius: 10px;
+    background: linear-gradient(90deg, #FFDE2E 0%, #FF965B 100%);
+    box-shadow: 2px 1px 7.5px 0px rgba(0, 0, 0, 0.19) inset;
+    height: 40px;
+    width: 150px;
+  }
+  .coinsParent{
+    margin-top: 6%;
+  }

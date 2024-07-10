@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NB Official - OLA Diamonds</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <style>
+
+    form{
+        border-radius: 11px;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        form input{
+      height: 50px;
+      color: rgb(87, 87, 87);
+      border-radius: 5px;
+      width: 100%;
+      border: none;
+      background-color: #EFEFEF;
+      padding-left: 4%;
+      outline: 0;
+      padding-right: 3%;
+    }
+    textarea{
+        background-color: #EFEFEF;
+        padding: 2%;
+        border-radius: 5px;
+    }
+
+.overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      transition: opacity 0.3s ease;
+    }
+
+    .popup-form-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border-radius: 8px;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Animation classes */
+    .show-popup {
+      display: block;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    /* Close button styles */
+    .popup-form-container button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .popup-form-container button:hover {
+      background-color: #555;
+    }
+
+    .mobileNav{
+        display: none;
+        position: fixed;
+        bottom: 0%;
+        background-color: #fff;
+        width: 100%;
+        z-index: 1;
+      }
+      .mobileNav img{
+        height: 40px;
+      }
+
+    @media (min-width: 100px) and (max-width: 510px) {
+        .mobileNav{
+          display: block;
+        }
+        
+      }
+    
+          @media (min-width: 200px) and (max-width: 800px) {
+        footer{
+         text-align: center;
+        }
+        .parentImgFoot{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .parentImgFoot img{
+          width: 60%;
+        }
+      }
+
+
+        </style>
+
+    <div class="parent">
+      <div class="header">
+        <div class="text py-2 mb-3">
+          <p class="text-center font-semibold">Diamond & Coins</p>
+        </div>
+        <nav data-aos="fade-down-right"
+          class="container col-12 col-md-4 col-lg-4 col-sm-12 rounded-full bg-white flex justify-between items-center"
+        >
+          <div class="logo">
+            <img
+              src="/images/4925afd1-8eb3-4967-b5f9-7060b6712209 1.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:block md:block hidden">
+            <ul class="flex gap-5">
+              <li>Home</li>
+              <li>Portfolio</li>
+              <li>Service</li>
+              <li>Pricing</li>
+              <li>Blog</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div class="buttonNav">
+            <button class="py-2"><a href="https://api.whatsapp.com/send/?phone=9315211973&text&type=phone_number&app_absent=0" target="_blank">Contact</a></button>
+          </div>
+        </nav>
+
+        <div class="main mb-5" data-aos="fade-up" >
+          <div class="flex justify-center flex-col">
+            <div class="widthRespo col-12 col-md-8 col-lg-8 col-sm-12">
+              <div class="rounded-3xl article bg-white py-5">
+                <div class="lg:grid gap-4 grid-cols-2">
+                  <div class="heading ps-5 pt-5">
+                    <div class="textHead" data-aos="fade-right">
+                      <h1 class="text-4xl font-bold mb-3 text-slate-600">
+                        MIKA COINS
+                      </h1>
+                      <hr class="lg:w-96 md:w-96 mb-4" />
+                    </div>
+                    <div
+                      class="paragraph w-72 text-base font-semibold text-slate-600"
+                    >
+                      <p  data-aos="fade-left" class="font-bold mb-4">Top-up Mika Coins With The Creative Star.</p>
+                      There's no credit card, registration or login required,
+                      and the diamonds will be added in your game account
+                      immediately after you complete the payment. it's the best
+                      way to buy diamonds online without a credit card!
+                    </div>
+                  </div>
+                  <div class="photo py-5 my-3 flex justify-center items-center">
+                    <div class="w-full olaPic" >
+                      <div class="container">
+                        <img
+                          class=" img-fluid"
+                          src="/images/4 926.png"
+                          alt=""
+                          style="height: 200px;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="mobileNav py-2">
+       
+          <ul class="flex gap-5 justify-center ">
+            <div>
+              <li>
+                <a href="#">
+                  <img src="/images/bottomNav/icons8-home-48.png" alt="">
+                  <div id="emailHelp" class="font-semibold form-text text-center">Home</div>
+                </a>
+              </li>
+            </div>
+            <div>
+            <li>
+              <a href="#">
+                <img src="/images/bottomNav/icons8-smile-48.png" alt="">
+                <div id="emailHelp" class="font-semibold form-text text-center">Service</div>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#">
+                <img src="/images/bottomNav/icons8-group-48.png" alt="">
+                <div id="emailHelp" class="font-semibold form-text text-center">Agency</div>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#">
+                <img src="/images/bottomNav/icons8-help-48.png" alt="">
+                <div id="emailHelp" class="font-semibold form-text text-center">Help</div>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#">
+                <img src="/images/bottomNav/icons8-info-48.png" alt="">
+                <div id="emailHelp" class="font-semibold form-text text-center">Info</div>
+              </a>
+            </li>
+          </div>
+          </ul>
+        </div>
+
+        
+
+      </div>
+      <div class="coinsParent pb-5 " style="margin-top: 10%;">  
+        <div class="container">
+        <h1 class="text-center text-4xl font-bold text-slate-600" style="padding-top: 6%;">MIKA COINS</h1>
+        <hr style="background-color: #333; height: 1px; margin-top: 3%;">
+    </div>
+        <div class="coinCard flex flex-wrap justify-center gap-12 container">
+
+          
+
+          <!--Profile card start-->
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()" >Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards" data-aos="fade-up" >
+            <div class="cards-image h-44"></div>
+            <div class="bg-white pb-3 rounded-xl">
+              <div class="profile-image">
+                <video src="/images/dollar.mp4" autoplay muted loop></video>
+              </div>
+              <div class="cards-content mt-4">
+                <h3 class="font-semibold">100</h3>
+                <h3 class="text-green-500 mt-2 font-semibold">$ 138.00</h3>
+                <div class="btnSale mt-4 flex justify-center">
+                  <button  class="text-lg text-white font-bold"onclick="togglePopup()" >Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profile card end-->
+        </div>
+      </div>
+
+      <div
+        class="bg-contain"
+        style="
+          background-image: url('/images/sci-fi-cyberpunk-city-uhdpaper.com-4K-108.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <footer class="py-4 mt-5" data-aos="fade-up">
+          <div class="container mt-5">
+            <div class="blockFooterOnLg">
+              <div class="row">
+                <div class="col-12 col-sm-4 mb-3 mb-sm-0">
+                  <div class="parentImgFoot">
+                    <img
+                      src="/images/4925afd1-8eb3-4967-b5f9-7060b6712209 1.png"
+                      alt=""
+                    />
+                    <p
+                      class="mt-5 mb-5 w-full lg:w-70 text-xs text-white"
+                    >
+                      From the time of its inception in the year 2020, till now
+                      and to the days to come, we strive and work on level up
+                      the bar of our targets, break the old records and service
+                      speed, and present a brand new exclusive. This way we
+                      challenge ourselves and work harder each day for getting
+                      the desired results. We provide coin selling and live
+                      hosting services in various applications.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-5 pt-5 col-md-4 mb-4">
+                  <div class="flexFoot">
+                    <h3 class="h5 text-white font-weight-bold mb-3">
+                      2.Quick Services
+                    </h3>
+                    <hr />
+                    <ul class="text-white font-semibold linkFooter">
+                      <li class="mt-4">
+                        <a href="#"><u>Purchase Coins</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Purchase Diamonds</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Join Hosting</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>OLA Party (Qwick Live)</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Hosting Requirements</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Get Chance In Industry</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Types of Host</u></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-5 pt-5 col-md-4 mb-4">
+                  <div class="">
+                    <h3 class="h5 text-white font-weight-bold mb-3">
+                      Quick Services
+                    </h3>
+                    <hr />
+                    <ul class="text-white font-semibold linkFooter">
+                      <li class="mt-4">
+                        <a href="#"><u>Purchase Coins</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Purchase Diamonds</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Join Hosting</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>OLA Party (Qwick Live)</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Hosting Requirements</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Get Chance In Industry</u></a>
+                      </li>
+                      <li class="mt-4">
+                        <a href="#"><u>Types of Host</u></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-6">
+                  <div class="foots mt-5 pt-5 text-xs flex text-white">
+                    <p>
+                      © 2022 Oktcs All Rights Reserved | Design and Maintained
+                      by The Creative Star
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="iconss flex gap-3 mt-5 pt-4 justify-center">
+                    <div class="flex gap-3 items-end">
+                      <a href="#">
+                        <img
+                          width="30"
+                          height="30"
+                          src="https://img.icons8.com/color/30/facebook-new.png"
+                          alt="facebook-new"
+                        />
+                      </a>
+                      <a href="#">
+                        <img
+                          width="30"
+                          height="30"
+                          src="https://img.icons8.com/color/30/instagram-new--v1.png"
+                          alt="instagram-new--v1"
+                        />
+                      </a>
+                      <a href="#">
+                        <img
+                          width="30"
+                          height="30"
+                          src="https://img.icons8.com/color/30/domain--v1.png"
+                          alt="domain--v1"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    <div class="popup-form-container" id="popupForm">
+      <form action="#" id="myForm" class="form-group px-5 py-3">
+        <div class="flex justify-between items-center">
+            <div>
+            <img src="/images/4925afd1-8eb3-4967-b5f9-7060b6712209 1.png" alt="" style="height: 60px; ">
+            </div>
+            <div>
+                <video src="/images/dollar.mp4" loop autoplay muted style="height: 80px; margin-bottom: 6%;"></video>
+            </div>
+        </div>
+         <div class="form-group mb-3">
+              <input type="email" id="email" class="" placeholder="Enter User Id..." required>
+              <div id="emailHelp" class="form-text">To find your User ID, tap on the profile picture on the upper left.Example: "12345678"</div>
+          </div>
+          <div class="form-group mb-3">
+              <input type="text" id="name" class="" placeholder="Enter Name" required>
+          </div>
+          <div class="form-group mb-3">
+              <input type="text" id="phone" class="" placeholder="Enter Phone Number..." required>
+          </div>
+          <div class="form-group mb-3">
+              <textarea id="message" cols="30" rows="5" class="" placeholder="Message"></textarea>
+          </div>
+          <div class="text-end btnSale flex flex-wrap justify-between">
+              <button type="button" id="btn" class="text-lg text-white font-bold">Submit</button>
+               <button class="text-lg text-white font-bold" onclick="closePopup()">Close</button>
+          </div>
+      </form>
+     
+    </div>
+  
+
+    <script src="/javascript/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000
+      });
+    </script>
+  </body>
+</html>
